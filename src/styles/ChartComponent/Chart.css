@@ -1,9 +1,5 @@
-/* .custom-chart-container {
-  font-family: "Inter", sans-serif;
-} */
-
 .custom-chart-container .recharts-cartesian-axis-tick-value {
-  fill: #6b7280; /* Adjust axis label color */
+  fill: #6b7280;
 }
 
 .custom-chart-container .recharts-tooltip-wrapper {
@@ -11,7 +7,7 @@
 }
 
 .custom-chart-container .recharts-line-dots .recharts-active-dot {
-  stroke: #4b40ee; /* Matching active dot with line color */
+  stroke: #4b40ee;
   stroke-width: 2px;
 }
 
@@ -23,7 +19,3 @@
 .recharts-cartesian-axis-tick text {
   display: none;
 }
-
-/* .recharts-cartesian-axis-bar {
-  margin-bottom: 20px;
-} */

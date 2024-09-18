@@ -52,8 +52,6 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = useRef<HTMLDivElement | null>(null);
 
-  // const benchmark = 64850.35;
-
   const changeTimeline = (newTimeline: string) => {
     if (newTimeline === "1d") {
       setTimelineData(data.data1d!);
@@ -99,6 +97,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: 2, md: "none" }}
       >
+        {/* Fullscreen and Compare buttons */}
         <Box ml={-3}>
           <Flex direction={"row"}>
             <Button
@@ -130,6 +129,8 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
           </Flex>
         </Box>
         <Spacer />
+
+        {/* Timeline selector buttons */}
         <Box mr={"50px"}>
           <Flex direction={"row"}>
             <ButtonGroup size="sm" /* isAttached */ variant="ghost" spacing={0}>
@@ -192,6 +193,8 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
                 axisLine={{ stroke: "#D0D0D0" }}
                 domain={["dataMin - 500", "dataMax + 500"]}
               />
+
+              {/* Tooltip to show minimal details */}
               <Tooltip
                 contentStyle={{
                   backgroundColor: "white",
@@ -222,7 +225,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
                 activeDot={{ r: 8 }}
               />
 
-              {/* Grey dotted Reference Lines for the benchmark */}
+              {/* Grey dotted Reference Lines for the average */}
               <ReferenceLine
                 y={data.currentChartData.average}
                 strokeDasharray="3 3"
@@ -272,6 +275,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
         </Box>
       )}
 
+      {/* Dialogue box for Compare button */}
       <AlertDialog
         isOpen={isOpen}
         leastDestructiveRef={cancelRef}

@@ -7,9 +7,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import Chart from "./Chart";
+import Chart from "@/components/ChartComponent/Chart";
 
-import { ChartData } from "../../types/ChartComponent";
+import { ChartData } from "@/types/ChartComponent";
 
 type Props = {
   chartData: ChartData;

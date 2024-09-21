@@ -11,7 +11,7 @@ import {
   YAxis,
 } from "recharts";
 
-import { CurrentData, TimelineData } from "../../../types/ChartComponent";
+import { CurrentData, TimelineData } from "@/types/ChartComponent";
 
 type Props = {
   timelineData: TimelineData[];

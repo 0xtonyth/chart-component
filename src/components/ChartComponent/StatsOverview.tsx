@@ -10,7 +10,7 @@ import {
   Skeleton,
 } from "@chakra-ui/react";
 
-import { CurrentData } from "../../types/ChartComponent";
+import { CurrentData } from "@/types/ChartComponent";
 
 type Props = {
   currentData: CurrentData;

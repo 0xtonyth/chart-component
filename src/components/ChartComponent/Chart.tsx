@@ -20,12 +20,12 @@ import {
 import { BsArrowsFullscreen, BsFullscreenExit } from "react-icons/bs";
 import { FiPlusCircle } from "react-icons/fi";
 
-import BarChartSingle from "./Charts/BarChartSingle";
-import AreaChartSingle from "./Charts/AreaChartSingle";
+import BarChartSingle from "@/components/ChartComponent/Charts/BarChartSingle";
+import AreaChartSingle from "@/components/ChartComponent/Charts/AreaChartSingle";
 
-import { ChartData, TimelineData } from "../../types/ChartComponent";
+import { ChartData, TimelineData } from "@/types/ChartComponent";
 
-import "../../styles/ChartComponent/Chart.css";
+import "@/styles/ChartComponent/Chart.css";
 
 type Props = {
   chartData: ChartData;

@@ -1,8 +1,8 @@
 import { Center } from "@chakra-ui/react";
 
-import ChartComponent from "./components/ChartComponent/ChartComponent";
+import ChartComponent from "@/components/ChartComponent/ChartComponent";
 
-// import "./App.css";
+// import "@/App.css";
 
 function App() {
   return (

@@ -4,10 +4,10 @@ import axios from "axios";
 
 import { Box } from "@chakra-ui/react";
 
-import StatsOverview from "./StatsOverview";
-import InfoTabs from "./InfoTabs";
+import StatsOverview from "@/components/ChartComponent/StatsOverview";
+import InfoTabs from "@/components/ChartComponent/InfoTabs";
 
-import { ChartData } from "../../types/ChartComponent";
+import { ChartData } from "@/types/ChartComponent";
 
 const initialData = {
   currentChartData: {
@@ -45,13 +45,13 @@ const ChartComponent = () => {
     if (!isFullscreen) {
       if (chartRef.current) {
         chartRef.current.requestFullscreen().catch((err) => {
-          console.error("Error attempting to enable full-screen mode:", err);
+          console.error("Error attempting to enable fullscreen mode:", err);
         });
       }
     } else {
       if (document.fullscreenElement) {
         document.exitFullscreen().catch((err) => {
-          console.error("Error attempting to exit full-screen mode:", err);
+          console.error("Error attempting to exit fullscreen mode:", err);
         });
       }
     }

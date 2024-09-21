@@ -18,7 +18,7 @@ type Props = {
 
 const InfoTabs = ({ chartData, toggleFullscreen }: Props) => {
   return (
-    <Tabs /* isFitted */ defaultIndex={1}>
+    <Tabs mt={{ base: -3, sm: -5 }} defaultIndex={1}>
       <TabList>
         <Tab
           p={{ base: 2, sm: 3 }}

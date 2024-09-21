@@ -14,6 +14,11 @@ const styles = {
   },
 };
 
+const fonts = {
+  heading: "Outfit, sans-serif",
+  body: "Outfit, sans-serif",
+};
+
 const components = {
   Button: {
     baseStyle: {
@@ -69,6 +74,7 @@ const components = {
 const theme = extendTheme({
   configs,
   styles,
+  fonts,
   components,
 });
 

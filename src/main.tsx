@@ -8,6 +8,7 @@ import App from "@/App";
 import theme from "@/theme/theme.ts";
 
 // import "@/index.css";
+import "@/styles/global.css";
 
 createRoot(document.getElementById("root")!).render(
   <ChakraProvider theme={theme}>

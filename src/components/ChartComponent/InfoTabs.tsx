@@ -7,9 +7,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import Chart from "./Chart";
+import Chart from "@/components/ChartComponent/Chart";
 
-import { ChartData } from "../../types/ChartComponent";
+import { ChartData } from "@/types/ChartComponent";
 
 type Props = {
   chartData: ChartData;
@@ -18,21 +18,46 @@ type Props = {
 
 const InfoTabs = ({ chartData, toggleFullscreen }: Props) => {
   return (
-    <Tabs /* isFitted */ defaultIndex={1}>
+    <Tabs mt={{ base: -3, sm: -5 }} defaultIndex={1}>
       <TabList>
-        <Tab fontSize={"14px"} fontWeight={500} color={"#4B40EE"}>
+        <Tab
+          p={{ base: 2, sm: 3 }}
+          fontSize={{ base: "10px", sm: "14px" }}
+          fontWeight={500}
+          color={"#4B40EE"}
+        >
           <Text textColor={"#404040"}>Summary</Text>
         </Tab>
-        <Tab fontSize={"14px"} fontWeight={500} color={"#4B40EE"}>
+        <Tab
+          p={{ base: 2, sm: 3 }}
+          fontSize={{ base: "10px", sm: "14px" }}
+          fontWeight={500}
+          color={"#4B40EE"}
+        >
           <Text textColor={"#404040"}>Chart</Text>
         </Tab>
-        <Tab fontSize={"14px"} fontWeight={500} color={"#4B40EE"}>
+        <Tab
+          p={{ base: 2, sm: 3 }}
+          fontSize={{ base: "10px", sm: "14px" }}
+          fontWeight={500}
+          color={"#4B40EE"}
+        >
           <Text textColor={"#404040"}>Statistics</Text>
         </Tab>
-        <Tab fontSize={"14px"} fontWeight={500} color={"#4B40EE"}>
+        <Tab
+          p={{ base: 2, sm: 3 }}
+          fontSize={{ base: "10px", sm: "14px" }}
+          fontWeight={500}
+          color={"#4B40EE"}
+        >
           <Text textColor={"#404040"}>Analysis</Text>
         </Tab>
-        <Tab fontSize={"14px"} fontWeight={500} color={"#4B40EE"}>
+        <Tab
+          p={{ base: 2, sm: 3 }}
+          fontSize={{ base: "10px", sm: "14px" }}
+          fontWeight={500}
+          color={"#4B40EE"}
+        >
           <Text textColor={"#404040"}>Settings</Text>
         </Tab>
       </TabList>

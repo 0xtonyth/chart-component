@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Outfit";
+  src:
+    url("./fonts/Outfit/Outfit-Light.woff2") format("woff2"),
+    url("./fonts/Outfit/Outfit-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}

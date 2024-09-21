@@ -172,7 +172,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
           <Box
             minW={"75px"}
             position={"absolute"}
-            top={{ base: "230px", md: "185px" }}
+            top={{ base: "215px", sm: "235px", md: "195px" }}
             // top={`${averageValuePosition}px`}
             right={"20px"}
             bg={"gray.800"}
@@ -190,7 +190,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
           <Box
             minW={"75px"}
             position={"absolute"}
-            top={{ base: "365px", md: "325px" }}
+            top={{ base: "350px", sm: "370px", md: "325px" }}
             // top={`${lastValuePosition}px`}
             right={"20px"}
             bg={"#4B40EE"}

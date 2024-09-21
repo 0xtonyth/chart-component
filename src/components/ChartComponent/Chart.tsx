@@ -83,14 +83,14 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
   return (
     <Box w={"100%"} className={"custom-chart-container"}>
       <Box
-        mt={5}
+        mt={{ base: 2, sm: 3, md: 5 }}
         mb={4}
         display={"flex"}
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: 2, md: "none" }}
       >
         {/* Fullscreen and Compare buttons */}
-        <Box ml={-3}>
+        <Box ml={{ base: -5, sm: -3 }}>
           <Flex direction={"row"}>
             <Button
               leftIcon={
@@ -123,7 +123,7 @@ const Chart = ({ chartData, toggleFullscreen }: Props) => {
         <Spacer />
 
         {/* Timeline selector buttons */}
-        <Box mr={"48px"}>
+        <Box mr={"48px"} ml={{ base: "-20px", sm: "none" }}>
           <Flex direction={"row"}>
             <ButtonGroup size={"sm"} variant={"ghost"} spacing={0}>
               {timeFrames.map((frame: string, index: number) => {

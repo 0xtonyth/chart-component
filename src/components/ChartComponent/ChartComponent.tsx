@@ -80,7 +80,7 @@ const ChartComponent = () => {
         borderWidth={1}
         borderRadius={"10px"}
         boxShadow={"10px"}
-        width={{ base: "480px", md: "680px" }}
+        width={{ base: "380px", sm: "480px", md: "680px" }}
         maxHeight={"100%"}
         h={isFullscreen ? "100vh" : { base: "585px", md: "535px" }}
         ref={chartRef}

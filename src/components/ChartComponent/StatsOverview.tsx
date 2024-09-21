@@ -29,8 +29,8 @@ const StatsOverview = ({ currentData }: Props) => {
     <>
       {isLoading ? (
         <Stack mb={10}>
-          <Skeleton width="200px" height="40px" />
-          <Skeleton width="130px" height="20px" />
+          <Skeleton width="220px" height="40px" />
+          <Skeleton width="150px" height="20px" />
         </Stack>
       ) : (
         <Box textAlign="left" mb={8}>
